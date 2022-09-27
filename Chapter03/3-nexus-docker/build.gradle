@@ -42,6 +42,10 @@ test {
 jib {
     from {
         image = 'adoptopenjdk/openjdk11:alpine-jre'
+         auth {
+            username = 'nebi25' // Defined in 'gradle.properties'.
+            password = '170anwkd!'
+        }
     }
     to {
         image = '809354325893.dkr.ecr.us-east-2.amazonaws.com/ecr_test'
